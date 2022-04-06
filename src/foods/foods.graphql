@@ -1,0 +1,30 @@
+type Food {
+  # Example field (placeholder)
+  exampleField: Int
+  id: Int
+  name: String
+}
+
+input CreateFoodInput {
+  # Example field (placeholder)
+  exampleField: Int
+  id: Int
+  name: String
+}
+
+input UpdateFoodInput {
+  id: Int!
+  exampleField: Int
+  name: String
+}
+
+type Query {
+  foods: [Food]!
+  food(id: Int!): Food
+}
+
+type Mutation {
+  createFood(createFoodInput: CreateFoodInput!): Food!
+  updateFood(updateFoodInput: UpdateFoodInput!): Food!
+  removeFood(id: Int!): Food
+}
