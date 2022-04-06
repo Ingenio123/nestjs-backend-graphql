@@ -37,7 +37,7 @@ $ yarn install
 ```bash
 # development
 $ yarn run start
-
+# generate graphql
 $ yarn gen
 # watch mode
 $ yarn run start:dev
